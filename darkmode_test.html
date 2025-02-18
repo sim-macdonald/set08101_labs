@@ -8,7 +8,7 @@
 <h1>Testing the dark mode concept can then expand to other accessibility features</h1>
 
   <!-- mode toggle button -->
-<button onclick="mode()">Dark Mode</button>
+<button onclick="darkMode()">Dark Mode</button>
 
 <script>
     /* onload stuff */
@@ -22,7 +22,7 @@
     }
 
   /* button press function */
-    function mode() {
+    function darkMode() {
         /* dark mode */
         if (document.getElementById("modeSheet").href.includes("light_mode.css")) {
             document.getElementById("modeSheet").href = "dark_mode.css";
@@ -31,6 +31,6 @@
         /* light mode */
         else {
             document.getElementById("modeSheet").href = "light_mode.css";
-            localStorage.setItem("darkMode", 0);
+            localStorage.setItem("mode", 0);
         }
     }
