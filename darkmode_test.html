@@ -24,6 +24,12 @@
   /* button press function */
     function darkMode() {
         /* dark mode */
+        /* needed to use chatgpt to help fix, the suggested change was only changing 
+        if (document.getElementById("modeSheet").href= "light_mode.css") {
+            document.getElementById("modeSheet").href = "dark_mode.css";
+            localStorage.setItem("mode", 1);
+        } 
+        to what is bellow as the href of the style sheet could contain the whole path instead of what we want to compare it to, which is the name of the file */
         if (document.getElementById("modeSheet").getAttribute("href") == "light_mode.css") {
             document.getElementById("modeSheet").href = "dark_mode.css";
             localStorage.setItem("mode", 1);
