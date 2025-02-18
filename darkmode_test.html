@@ -24,7 +24,7 @@
   /* button press function */
     function darkMode() {
         /* dark mode */
-        if (document.getElementById("modeSheet").getAttribute("href") === "light_mode.css") {
+        if (document.getElementById("modeSheet").getAttribute("href") == "light_mode.css") {
             document.getElementById("modeSheet").href = "dark_mode.css";
             localStorage.setItem("mode", 1);
         } 
