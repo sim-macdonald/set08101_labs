@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link id="modeSheet" rel="stylesheet" href="light_mode.css">
+</head>
+<body onload="settings()">
+
+<h1>Testing the dark mode concept can then expand to other accessibility features</h1>
+
+  <!-- mode toggle button -->
+<button onclick="darkMode()">Dark Mode</button>
+
+<script>
+    /* onload stuff */
+    function settings() {
+        // Apply dark mode preference
+        if (localStorage.getItem("mode") == 1) {
+            document.getElementById("modeSheet").href = "dark_mode.css";
+        } else {
+            document.getElementById("modeSheet").href = "light_mode.css";
+        }
+    }
+
+  /* button press function */
+    function mode() {
+        /* dark mode */
+        if (document.getElementById("modeSheet").href.includes("light_mode.css")) {
+            document.getElementById("modeSheet").href = "dark_mode.css";
+            localStorage.setItem("mode", 1);
+        } 
+        /* light mode */
+        else {
+            document.getElementById("modeSheet").href = "light_mode.css";
+            localStorage.setItem("darkMode", 0);
+        }
+    }
