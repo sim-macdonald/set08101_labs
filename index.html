@@ -26,4 +26,17 @@
 		<li><a href="darkmode_test.html">darkmode_test.html</a></li>
 
 	</body >
+
+	<!-- this onload script needs to be included on every page I think -->
+	<script>
+    /* onload stuff */
+    function settings() {
+        // Apply dark mode preference
+        if (localStorage.getItem("mode") == 1) {
+            document.getElementById("modeSheet").href = "dark_mode.css";
+        } else {
+            document.getElementById("modeSheet").href = "light_mode.css";
+        }
+    }
+	</script>
 </html >
