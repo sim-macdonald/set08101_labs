@@ -2,6 +2,7 @@
 <html>
 <head>
     <link id="modeSheet" rel="stylesheet" href="light_mode.css">
+    <link id="fontStyle" rel="stylesheet" href="Arial.css">
 </head>
 <body onpageshow="settings()">
 
@@ -14,9 +15,8 @@
 <div class="fontdrop">
   <button onclick="fontdrop()" class="dropbtn">Dropdown</button>
   <div id="fontDropdown" class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="#" onclick="changefont('arial')">Arial</a>
+    <a href="#" onclick="changefont('comicSans')>Comic Sans</a>
   </div>
 </div>
 
@@ -29,17 +29,17 @@
         } else {
             document.getElementById("modeSheet").href = "light_mode.css";
         }
+
+        // Apply font preferences
+        if (localStorage.getItem("font") == 'arial'{
+            document.getElementById("fontStyle").href = "Arial.css";}
+        if (localStorage.getItem("font") == 'comicSans'{
+            document.getElementById("fontStyle").href = "ComicSans.css";}
     }
 
   /* button press function */
     function darkMode() {
         /* dark mode */
-        /* needed to use chatgpt to help fix, the suggested change was only changing 
-        if (document.getElementById("modeSheet").href= "light_mode.css") {
-            document.getElementById("modeSheet").href = "dark_mode.css";
-            localStorage.setItem("mode", 1);
-        } 
-        to what is bellow as the href of the style sheet could contain the whole path instead of what we want to compare it to, which is the name of the file */
         if (document.getElementById("modeSheet").getAttribute("href") == "light_mode.css") {
             document.getElementById("modeSheet").href = "dark_mode.css";
             localStorage.setItem("mode", 1);
@@ -50,6 +50,9 @@
             localStorage.setItem("mode", 0);
         }
     }
+
+    /* font buttons */
+        
 
     /* Font Dropdown menu */
 function fontdrop() {
