@@ -13,10 +13,10 @@
 
 <!--dropdown for font -->
 <div class="fontdrop">
-  <button onclick="fontdrop()" class="dropbtn">Dropdown</button>
+  <button onclick="fontdrop()" class="dropbtn">Font</button>
   <div id="fontDropdown" class="dropdown-content">
-    <a href="#" onclick="changefont('arial')">Arial</a>
-    <a href="#" onclick="changefont('comicSans')>Comic Sans</a>
+    <a href="#" onclick="changeFont('arial')">Arial</a>
+    <a href="#" onclick="changeFont('comicSans')>Comic Sans</a>
   </div>
 </div>
 
@@ -52,6 +52,14 @@
     }
 
     /* font buttons */
+        function changeFont(font) {
+        if (font == 'arial') {
+        document.getElementById("fontStyle") = "Arial.css";
+        localStorage.setItem("font",'arial')}
+        if (font == 'comicSans') {
+        document.getElementById("fontStyle") = "comicSans.css";
+        localStorage.setItem("font",'comicSans')}
+        }
         
 
     /* Font Dropdown menu */
