@@ -31,9 +31,9 @@
         }
 
         // Apply font preferences
-        if (localStorage.getItem("font") == 'arial'{
+        if (localStorage.getItem("font") == 'arial'){
             document.getElementById("fontStyle").href = "Arial.css";}
-        if (localStorage.getItem("font") == 'comicSans'{
+        if (localStorage.getItem("font") == 'comicSans'){
             document.getElementById("fontStyle").href = "ComicSans.css";}
     }
 
@@ -54,10 +54,10 @@
     /* font buttons */
         function changeFont(font) {
         if (font == 'arial') {
-        document.getElementById("fontStyle") = "Arial.css";
+        document.getElementById("fontStyle").href = "Arial.css";
         localStorage.setItem("font",'arial')}
         if (font == 'comicSans') {
-        document.getElementById("fontStyle") = "comicSans.css";
+        document.getElementById("fontStyle").href = "comicSans.css";
         localStorage.setItem("font",'comicSans')}
         }
         
