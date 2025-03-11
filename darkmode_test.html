@@ -10,6 +10,16 @@
   <!-- mode toggle button -->
 <button onclick="darkMode()">Dark Mode</button>
 
+<!--dropdown for font -->
+<div class="fontdrop">
+  <button onclick="fontdrop()" class="dropbtn">Dropdown</button>
+  <div id="fontDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
 <script>
     /* onload stuff */
     function settings() {
@@ -40,6 +50,25 @@
             localStorage.setItem("mode", 0);
         }
     }
+
+    /* Font Dropdown menu */
+function fontdrop() {
+  document.getElementById("fontDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>
 </body>
 </html>
