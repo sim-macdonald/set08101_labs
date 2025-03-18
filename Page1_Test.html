@@ -5,7 +5,7 @@
 <style>
 body {
 		display: grid;
-		grid-template-columns: auto;
+		grid-template-columns: 1fr;
 		padding: 10px;
 		}
 .settings_bar {
@@ -17,7 +17,7 @@ body {
         } 
 .pictures {
 		display: grid;
-		grid-template-columns: auto auto;
+		grid-template-columns: 1fr 1fr;
 		gap: 20px;
 		}
 .navigation {
@@ -27,7 +27,7 @@ body {
 </style>
 </head>
 <body onpageshow="settings()">
-		<div class = "settings_bar">
+	<div class = "settings_bar">
 		<!-- mode toggle button -->
 		<button onclick="darkMode()">Dark Mode</button>
 
