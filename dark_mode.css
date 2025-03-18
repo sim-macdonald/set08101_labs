@@ -14,7 +14,7 @@ button {
 }
     /* Dropdown Button */
 .button, .dropbtn {
-  background-color: #4aab80;
+  background-color: #37ab77;
   color: white;
 }
 
@@ -52,5 +52,5 @@ button {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
-}
+
 
