@@ -1,7 +1,8 @@
 /* light mode sheet */
 body {
     background-color: white;
-    color: black;
+    color: #121212;
+}
 
     /* Dropdown Button */
 .dropbtn {
