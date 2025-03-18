@@ -10,12 +10,14 @@ button {
     border: none;
     cursor: pointer;
     height: 50px;
+    width: 100%
 }
 
     /* Dropdown Button */
 .button, .dropbtn {
   background-color: #37ab77;
   color: #121212;
+    width: 100%
 }
 
 /* Dropdown button on hover & focus */
@@ -41,7 +43,7 @@ button {
   background-color: #b0aeae;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 9999;
 }
 
 /* Links inside the dropdown */
