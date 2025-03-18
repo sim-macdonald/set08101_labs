@@ -1,8 +1,9 @@
 /* Dark mode style sheet */
 
 body {
-    background-color: black;
-    color: white;
+    background-color: #121212;
+    color: #E0E0E0;
+)
 
     /* Dropdown Button */
 .dropbtn {
