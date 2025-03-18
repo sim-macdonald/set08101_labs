@@ -5,14 +5,13 @@
 <style>
 body {
 		display: grid;
-		grid-template-columns: auto;
+		grid-template-columns: 1fr;
 		grid-template-rows: auto auto auto auto;
 		padding: 10px;
 		gap: 10px;
 		}
 .settings_bar {
-        display: grid;
-		grid-template-columns: 1fr 1fr;
+        display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px;
@@ -21,6 +20,7 @@ body {
 .pictures {
 		display: grid;
 		justify-content: center;
+		grid-template-columns: 1fr 1fr
         align-items: center;
 		gap: 10px;
 		}
@@ -32,6 +32,7 @@ body {
 </style>
 </head>
 <body onpageshow="settings()">
+
 	<div class = "settings_bar">
 		<!-- mode toggle button -->
 		<button onclick="darkMode()">Dark Mode</button>
@@ -44,6 +45,7 @@ body {
 				<a href="javascript:void(0);" onclick="changeFont('arial')">Arial</a>
 				<a href="javascript:void(0);" onclick="changeFont('comicSans')">Comic Sans</a>
 			</div>
+		</div>
 	</div>
 	<div class = "pictures">
 		<div>
