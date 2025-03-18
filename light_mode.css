@@ -19,7 +19,7 @@ button {
 }
 
 /* Dropdown button on hover & focus */
-.button:hover, .button:focus, .dropbtn:hover, .dropbtn:focus {
+.button:hover, .dropbtn:hover, .dropbtn:focus {
   background-color: #6ebc99;
 }
 
@@ -33,7 +33,7 @@ button {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #F5F5F5;
+  background-color: #b0aeae;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -48,7 +48,7 @@ button {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #d4d4d4;}
+.dropdown-content a:hover {background-color: #9c9a9a;}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
