@@ -73,6 +73,23 @@ body {
 	</div>
 	
 	<script>
+	function home() {
+		if (confirm("Leaving this page will lose your current progress")){
+			document.location="index.html"
+		}
+	}
+	
+	function next() {
+		document.location="Page2_test.html"
+	}
+
+	  //prototype function for enabling the next button, will likely be something like getting 3 questions correct. Best trigger is on the answering of the last question.
+  function testCondition() {
+	  if (correct = 3) {
+		  document.getElementById("nextButton").classList.remove("disabled");
+	  }
+  }
+	
     /* onload stuff */
     function settings() {
         // Apply dark mode preference
@@ -132,13 +149,6 @@ body {
 			}
 		}
 	}
-
-  //prototype function for enabling the next button, will likely be something like getting 3 questions correct. Best trigger is on the answering of the last question.
-  function testCondition() {
-	  if (correct = 3) {
-		  document.getElementById("nextButton").classList.remove("disabled");
-	  }
-  }
 </script>
 </body>
 </html>
