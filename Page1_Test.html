@@ -5,7 +5,7 @@
 <style>
 body {
 		display: grid;
-		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto;
 		padding: 10px;
 		}
 .settings_bar {
@@ -41,19 +41,6 @@ body {
 	<div class = "navigation">
 		<button onclick="home()">Home</button>
 		<button onclick="next()">Next</button>
-	</div>
-		<div class = "settings_bar">
-		<!-- mode toggle button -->
-		<button onclick="darkMode()">Dark Mode</button>
-
-		<!--dropdown for font -->
-		<div class="fontdrop">
-			<button onclick="fontdrop()" class="dropbtn">Font</button>
-			<div id="fontDropdown" class="dropdown-content">
-				<!--javascript:void(0); makes the webpage not change -->
-				<a href="javascript:void(0);" onclick="changeFont('arial')">Arial</a>
-				<a href="javascript:void(0);" onclick="changeFont('comicSans')">Comic Sans</a>
-			</div>
 	</div>
 	
 	<script>
