@@ -19,7 +19,7 @@ button {
 }
 
 /* Dropdown button on hover & focus */
-.button:hover, .button:focus, .dropbtn:hover, .dropbtn:focus {
+.button:hover, .button:focus, .dropbtn:focus {
   background-color: #6ebc99;
 }
 
