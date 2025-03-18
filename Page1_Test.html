@@ -4,7 +4,7 @@
     <link id="fontStyle" rel="stylesheet" href="Arial.css">
 <style>
 body {
-		display: 1fr;
+		display: grid;
 		grid-template-columns: auto;
 		padding: 10px;
 		}
@@ -17,7 +17,7 @@ body {
         } 
 .pictures {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: auto auto;
 		gap: 20px;
 		}
 .navigation {
@@ -27,6 +27,19 @@ body {
 </style>
 </head>
 <body onpageshow="settings()">
+		<div class = "settings_bar">
+		<!-- mode toggle button -->
+		<button onclick="darkMode()">Dark Mode</button>
+
+		<!--dropdown for font -->
+		<div class="fontdrop">
+			<button onclick="fontdrop()" class="dropbtn">Font</button>
+			<div id="fontDropdown" class="dropdown-content">
+				<!--javascript:void(0); makes the webpage not change -->
+				<a href="#" onclick="changeFont('arial')">Arial</a>
+				<a href="#" onclick="changeFont('comicSans')">Comic Sans</a>
+			</div>
+	</div>
 	<div class = "pictures">
 		<div>
 			<img src="placeholder.png" alt="Witch's House">
@@ -41,19 +54,6 @@ body {
 	<div class = "navigation">
 		<button onclick="home()">Home</button>
 		<button onclick="next()">Next</button>
-	</div>
-	<div class = "settings_bar">
-		<!-- mode toggle button -->
-		<button onclick="darkMode()">Dark Mode</button>
-
-		<!--dropdown for font -->
-		<div class="fontdrop">
-			<button onclick="fontdrop()" class="dropbtn">Font</button>
-			<div id="fontDropdown" class="dropdown-content">
-				<!--javascript:void(0); makes the webpage not change -->
-				<a href="javascript:void(0);" onclick="changeFont('arial')">Arial</a>
-				<a href="javascript:void(0);" onclick="changeFont('comicSans')">Comic Sans</a>
-			</div>
 	</div>
 	
 	<script>
