@@ -10,6 +10,8 @@ button {
     border: none;
     cursor: pointer;
     height: 50px;
+    position: relative;
+    z-index: 10;
 }
 
     /* Dropdown Button */
