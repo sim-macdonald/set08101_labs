@@ -73,6 +73,9 @@ body {
 	</div>
 	
 	<script>
+	//placeholder
+	correct=0;
+		
 	function home() {
 		if (confirm("Leaving this page will lose your current progress")){
 			document.location="index.html"
@@ -80,7 +83,11 @@ body {
 	}
 	
 	function next() {
-		document.location="Page2_test.html"
+		if (correct=3){
+			document.location="Page2_test.html"
+		}else{
+			alert("Finish the level to move on");
+		}
 	}
 
 	  //prototype function for enabling the next button, will likely be something like getting 3 questions correct. Best trigger is on the answering of the last question.
